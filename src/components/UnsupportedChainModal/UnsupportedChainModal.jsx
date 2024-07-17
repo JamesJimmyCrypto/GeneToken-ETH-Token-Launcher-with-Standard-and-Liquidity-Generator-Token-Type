@@ -1,5 +1,6 @@
 import { Dialog, DialogContent } from "@/ui/shadcn/components/ui/dialog";
 import { ArrowRight, QuestionMark } from "iconoir-react";
+import React from "react";
 
 const UnsupportedChainModal = ({ show, setShow }) => {
   return (

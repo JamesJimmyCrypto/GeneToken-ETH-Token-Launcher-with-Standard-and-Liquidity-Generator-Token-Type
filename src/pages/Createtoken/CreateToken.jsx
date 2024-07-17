@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
-import {
-  useAccount,
-  useChainId,
-  useBalance,
-  useConnections,
-  useChains,
-} from "wagmi";
-import { StandardByteCode, SecondByteCode } from "@/constant/ByteCodes";
-import StandardABI from "@/constant/StandardABI.json";
-import SecondABI from "@/constant/SecondABI.json";
+import { useAccount, useChainId, useBalance, useChains } from "wagmi";
+import { StandardByteCode, SecondByteCode } from "../../constant/ByteCodes";
+import StandardABI from "../../constant/StandardABI.json";
+import SecondABI from "../../constant/SecondABI.json";
 import Web3 from "web3";
-import { useEthersSigner } from "@/provider/ethersProvider";
+import { useEthersSigner } from "../../provider/ethersProvider";
 import { ethers, parseEther } from "ethers";
+import { toast } from "sonner";
 const CreateToken = () => {
   const chainId = useChainId();
   const [Signer, SetSigner] = useState("");
@@ -114,11 +109,9 @@ const CreateToken = () => {
       return toast.error("Please connect your wallet.");
     }
     // Check for the correct chain ID
-    // if (chainId !== 4200) {
-    //   return  toast.error(
-    //     "Please connect to Merlin Mainnet (Chain ID 4200)."
-    //   );
-    // }
+    if (chainId !== 97) {
+      return toast.error("Please connect to Bsc Testnet (Chain ID 97).");
+    }
     // Validation logic
     if (!tname || tname.trim() === "") {
       return toast.error("Token name is required.");

@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import Container from "../Container/Container";
 import { useState } from "react";
 import { MenuScale } from "iconoir-react";
+import React from "react";
 
 const Header = () => {
   const location = useLocation();

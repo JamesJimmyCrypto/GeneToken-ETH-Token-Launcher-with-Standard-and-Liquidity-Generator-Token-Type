@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Container from "../Container/Container";
 import { Discord, X } from "iconoir-react";
+import React from "react";
 
 const Footer = () => {
   return (

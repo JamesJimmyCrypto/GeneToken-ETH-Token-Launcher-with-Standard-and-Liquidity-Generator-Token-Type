@@ -1,3 +1,4 @@
+import React from "react";
 import { createWeb3Modal } from '@web3modal/wagmi/react'
 import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
 import { WagmiProvider } from 'wagmi'
@@ -18,7 +19,7 @@ const metadata = {
   icons: ['https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F295900638027546727%2F&psig=AOvVaw36hJVWMiAXs-QSIaIAKbkr&ust=1715925640610000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCb4qO_kYYDFQAAAAAdAAAAABAE']
 }
 
-const chains = [mainnet, arbitrum,bscTestnet,bsc];
+const chains = [bscTestnet];
 const config = defaultWagmiConfig({
   chains,
   projectId,
