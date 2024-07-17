@@ -1,10 +1,10 @@
-# Token Generator on BNB Chain with Core DAO
+# Token Generator on Core DAO
 
-![alt text](https://x.com/KunalDhongade/status/1813517027132559585/photo/1)
+![alt text](https://pbs.twimg.com/media/GSroGBSacAAIDG6?format=jpg&name=large)
 
 ## Project Overview
 
-This project is a Token Generator built on the BNB Chain using Vite and npm. It allows users to create standard tokens (ERC/BRC) and liquidity generator tokens with various features such as max limit, max transaction limit, marketing and operation fees, burn fees, and liquidity fees.
+This project is a Token Generator built on the BNB Chain using Vite and React. It allows users to create standard tokens (ERC/BRC) and liquidity generator tokens with various features such as max limit, max transaction limit, marketing and operation fees, burn fees, and liquidity fees.
 
 ## Features
 
@@ -48,10 +48,6 @@ This project is a Token Generator built on the BNB Chain using Vite and npm. It 
    http://localhost:5173/
    ```
 
-## Demo
-
-![alt text](https://x.com/KunalDhongade/status/1813517027132559585/photo/1)
-
 ## Usage
 
 1. **Create a Standard Token:**
@@ -60,9 +56,13 @@ This project is a Token Generator built on the BNB Chain using Vite and npm. It 
    - Enter the desired token parameters such as name, symbol, total supply, etc.
    - Deploy the token on the BNB Chain.
 
+![alt text](https://pbs.twimg.com/media/GSrpYYnasAA-d9_?format=jpg&name=large)
+
 2. **Create a Liquidity Generator Token:**
 
    - Similar to creating a standard token, but with additional parameters for liquidity fees, burn fees, etc.
+
+![alt text](https://pbs.twimg.com/media/GSrpjRzaIAAF-jC?format=jpg&name=large)
 
 3. **Configure Fees:**
    - Set the marketing and operation fee percentage.
